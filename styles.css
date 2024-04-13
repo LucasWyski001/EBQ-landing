@@ -1,0 +1,336 @@
+/******* LANDING PAGE STYLES *******/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.container{
+    width: 85%;
+    max-width: none;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header{
+    background: #ECF3FB;
+    padding: 20px 0;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height:110px;
+    width: auto;
+}
+.contact-button{
+    padding: 15px 40px;
+    background-color: #2680EB;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contact-button:hover{
+    background-color: #ffa500;
+    color: #000;
+}
+/* this section is the styling for marketing services */
+.marketing-services{
+    background-color: #ECF3FB;
+    padding: 60px 0 100px 0;
+    text-align: left;
+}
+.marketing-services h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-left: 7rem;
+    line-height: 1.1;
+}
+.marketing-services h1 .line:first-child{
+    font-weight: normal;
+    display: block;
+}
+.marketing-services h1 .line:last-child{
+    font-weight: bold;
+    display: block;
+}
+.marketing-services p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 450px;
+    margin-left: 7rem;
+    margin-right: auto;
+}
+/* this section is the styling for the marketin tools section */
+.marketing-tools{
+    padding: 150px 0 100px 0;
+}
+.marketing-tools h2{
+    text-align: left;
+    max-width: 550px;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1.1;
+}
+.marketing-tools h2 .bold-text{
+    font-weight: bold;
+}
+.marketing-tools p{
+    line-height: 1.5;
+    font-weight: 500;
+    max-width: 430px;
+    margin-left: 7rem;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+.tools-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tool-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.tool-icons img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px;
+}
+/* this is the styling for the marketing team section */
+.marketing-team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 150px 0;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team-container img{
+    width: 45%;
+    height: auto;
+    display: block;
+    margin-left: 23%;
+}
+.team-text{
+    margin-right: 20%;
+}
+.team-text h2{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    max-width: 630px;
+}
+.team-text h2 .bold-text{
+    font-weight: bold;
+}
+.team-text p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    max-width: 600px;
+}
+/* this is the styling for footer section of the webpage */
+.footer{
+    background-color: #04499c;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer h2{
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+.footer h2 .bold-text{
+    font-weight: bold;
+}
+.footer-button{
+    padding: 15px 30px;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 20px;
+    color: #04499c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+.footer-button:hover{
+    background-color: #f3bb52;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 100%; 
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+
+    .header {
+        padding: 10px 0; 
+    }
+
+    .header-container {
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10px; 
+    }
+
+    .logo,
+    .contact-button {
+        margin: 0 10px; 
+    }
+
+    .logo img {
+        height: 80px; 
+        margin-bottom: 20px;
+    }
+
+    .contact-button {
+        padding: 10px 20px;
+        font-size: 0.9rem; 
+    }
+
+    .contact-button:hover {
+        transform: scale(1);
+    }
+    .marketing-services {
+        padding: 30px 0 50px 0;
+        text-align: center; 
+    }
+
+    .marketing-services h1,
+    .marketing-services p {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        max-width: 100%; 
+    }
+
+    .marketing-services h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .marketing-services p {
+        font-size: 1rem; 
+        padding: 0 10px;
+    }
+    .tools-container {
+        flex-direction: column;
+    }
+
+    .tool-icons {
+        order: 1;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+    .tool-icons img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .text-content {
+        order: 2;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .marketing-tools {
+        padding-top: 50px;
+    }
+
+    .marketing-tools h2 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center; 
+    }
+
+    .marketing-tools p {
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .marketing-team, .team-container {
+        padding-bottom: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-container img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        order: 3;
+    }
+
+    .team-text {
+        margin-right: 0;
+        order: 2; 
+    }
+
+    .team-text h2 {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+
+    .team-text p {
+        max-width: 100%;
+    }
+    .footer {
+        position: static;
+        padding: 40px 0px;
+        height: auto;
+        display: block;
+        visibility: visible;
+        z-index: 1000;
+    }
+
+    .footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .footer-button:hover {
+        transform: none;
+    }
+}

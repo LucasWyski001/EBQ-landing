@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container header-container">
+			<div class="logo">
+				<img src="assets/logo-blue-160x160-1.png" alt="EBQ logo">
+			</div>
+			<button class="contact-button">Contact Us</button>
+		</div>
+	</header>
+	<main>
+		<section class="marketing-services">
+			<div class="container">
+				<h1>
+					<span class="line">Integrated</span>
+					<span class="line">Marketing Services</span>
+				</h1>
+				<p>We turn your marketing plans into action by building on your ideas and executing initiatives alongside you and your team. Get a complete department that can pivot to different areas of marketing based on your needs.</p>
+			</div>
+		</section>
+
+		<section class="marketing-tools">
+			<div class="container tools-container">
+				<div class="text-content">
+					<h2>We're experts with <span class="bold-text">modern marketing tools,</span> so you don't have to be!</h2>
+					<p>With hands-on experience in B2B's most innovative apps and tools, we take a data driven approach to continually improve prospect engagement. Whether we work directly out of our platform or provide our insights manually, you always get full visibility into the process.</p>
+				</div>
+				<div class="tool-icons">
+					<img src="assets/Marketing_Tools.svg" alt="Marketing Tools">
+				</div>
+			</div>
+		</section>
+
+		<section class="marketing-team">
+			<div class="container team-container">
+				<img src="assets/Complete-Department-Marketing.png" alt="image of multiple people">
+			</div>
+			<div class="team-text">
+				<h2><span class="bold-text">The best way</span> to build a marketing team</h2>
+				<p>With EBQ, you're not just hiring a marketing specialist. You're getting an entire marketing department at a fraction of the cost and effort of hiring internally.</p>
+				<p>For each project, we provide: a Success Manager to drive high-level strategy, a Project Manager to oversee day-today operations, and pone or more Specialists working diligently to amplify your brand.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer-container">
+			<h2>Looking to take your <span class="bold-text">marketing</span> to the next level?</h2>
+			<button class="footer-button">Contact Us</button>
+		</div>
+	</footer>
+	<!--Page Content-->
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", () => {
+        // Event listener for the header "Contact Us" button
+        const headerButton = document.querySelector('.header .contact-button');
+        headerButton.addEventListener('click', () => {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { x: 0.5, y: 0.6 }
+            });
+        });
+        // Event listener for the footer "Contact Us" button
+        const footerButton = document.querySelector('.footer .footer-button');
+        footerButton.addEventListener('click', () => {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { x: 0.5, y: 0.6 } 
+            });
+        });
+    });
+	</script>
+</body>
+</html>
